@@ -10,7 +10,7 @@ export const LoginPage = () => {
     const {onSubmit,validationSchema,initialValues} = useLogin()
     
     return (
-        <Box color='black' maxW='container.sm' mx='auto' mt='4'>
+        <Box color='black' maxW={{base:'100%',lg:'container.md'}} mx={{base:'4',lg:'auto'}} mt='4'>
             <Heading textAlign='center' color='white'>Login</Heading>
             <Formik
                 initialValues={initialValues}
@@ -23,7 +23,7 @@ export const LoginPage = () => {
                         <Form >
                             <MyInputText label='Email' id='email' name='email' placeholder='Ingrese su email' />
                             <MyInputText type='password' label='Password' id='password' name='password' placeholder='Ingrese su password' />
-                            <Button my='4' w='full' type="submit">Iniciar sesion</Button>
+                            <Button colorScheme='theGreen' my='4' w='full' type="submit">Iniciar sesion</Button>
                             <Link as={NavLink} color='white'  to='/register' isExternal={false}>No tenes cuenta? Registrate aca.</Link>
                         </Form>
 

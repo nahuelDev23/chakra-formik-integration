@@ -10,7 +10,7 @@ export const RegisterPage = () => {
     const { onSubmit, validationSchema, initialValues } = useRegister()
 
     return (
-        <Box color='black' maxW='container.sm' mx='auto' mt='4'>
+        <Box color='black' maxW={{base:'100%',lg:'container.md'}} mx={{base:'4',lg:'auto'}}>
             <Heading textAlign='center' color='white'>Registrate</Heading>
             <Formik
                 initialValues={initialValues}

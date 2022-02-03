@@ -13,8 +13,8 @@ export const Navigation = () => {
 
     return (
         <BrowserRouter>
-            <Box bgColor='gray.800' minH='100vh' color='white'>
-                <Box w='container.lg' mx='auto' pt='4'>
+            <Box bgColor='gray.800' minH='100vh' color='white' maxW='100%'>
+                <Box w={{base:'100%',lg:'container.lg'}} mx='auto' pt='4'>
                     <Box as='nav' mb='8' >
                         <UnorderedList display='flex' listStyleType='none' >
                             <ListItem mr='4'>
